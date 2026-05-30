@@ -1,0 +1,29 @@
+/*
+
+  Write a C++ program that does the following:
+  Read two numbers from the user:
+  mass m (kg)
+  speed v (m/s)
+  If m <= 0 or v < 0, print:
+  "Invalid input"
+  Otherwise, compute the kinetic energy:
+  K=1/2 m v^2*/
+
+
+
+void Q2() {
+
+  double m = 10;
+  double v = 5;
+   double K =  0.5 * m * v * v;
+  if (m <= 0 || v < 0) {
+    std::cout << "Invalid input"
+              << std::endl;
+  }
+
+  else {
+//  double K =  0.5 * m * v * v;
+
+            std::cout << "Kinetic Energy = " << K << std::endl;
+  }
+}
